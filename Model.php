@@ -27,7 +27,7 @@ class Model {
 	}
 
 	public function fill() {
-		for ($i = 50; $i < 1000; $i++) {
+		for ($i = 0; $i < 1000; $i++) {
 			$j = $i + 1;
 			$query = 'INSERT INTO products(`vendor_code`,`name`,`brand`,`type`,`color`,`discount`,`price`,`date`)
 				VALUES (' . "'abc-{$j}','name-{$j}','brand-{$j}','type-{$j}','color-{$j}', " . rand(0, 50) . "," . rand(100, 40000)
